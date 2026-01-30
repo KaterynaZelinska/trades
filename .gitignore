@@ -1,3 +1,7 @@
+# Project artifacts
+agg_result.db
+output/ 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

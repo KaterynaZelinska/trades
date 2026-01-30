@@ -1,0 +1,18 @@
+[project]
+name = "trades"
+description = "ETL and reporting for blockchain trading data"
+authors = [{name="Kateryna Zelinska"}]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=3.0.0",
+    "matplotlib>=3.10.0",
+    "pydantic-settings>=2.1.0",
+]
+
+[project.scripts]
+run-etl = "etl.run_etl:main"
+run-reporting = "reporting.run_reporting:run"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
